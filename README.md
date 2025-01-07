@@ -7,6 +7,6 @@ my neovim settings
 
 | command | action          |
 |:--------|:----------------|
-| <C-n>   | toggle navi bar |
+|`<C-n>`  | toggle navi bar |
 
 [settings](./nvim/lua/plugins/nvim-tree.lua)
