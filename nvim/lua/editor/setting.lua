@@ -9,3 +9,7 @@ o.cursorline = true
 o.expandtab = true
 o.encoding = "UTF-8"
 o.title = true
+o.shiftwidth = 4
+o.spell = true
+o.spelllang = "en_us"
+o.wrap = true
