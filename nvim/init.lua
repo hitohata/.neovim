@@ -1,3 +1,3 @@
-require("config.lazy")
 require("editor.setting")
+require("config.lazy")
 
