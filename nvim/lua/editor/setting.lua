@@ -13,3 +13,4 @@ o.shiftwidth = 4
 o.spell = true
 o.spelllang = "en_us"
 o.wrap = true
+o.breakindent = true
