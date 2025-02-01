@@ -1,4 +1,4 @@
 return {
 	"neovim/nvim-lspconfig",
-	config = function() end,
+	opt = require("plugins.lsp-settings.index"),
 }
