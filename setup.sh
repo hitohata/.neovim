@@ -18,6 +18,7 @@ fi
 # remove .bashrc
 if [ -f ${NVIM_SETTING} ]; then
   mv ${NVIM_SETTING} ${BACKUP_DIR}/nvim
+  rm ${NVIM_SETTING}
 fi
 
 # add symbolic link
