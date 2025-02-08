@@ -6,16 +6,20 @@ NVIM_SETTING=$HOME/.config/nvim
 
 BACKUP_DIR="${HOME}/.DotenvBackups"
 
-if [ ! -d $BACKUP_DIR ];
-then
-    mkdir -p $BACKUP_DIR
+# get this file dir
+script_path=$(readlink -f "$0")
+script_dir=$(dirname "$script_path")
+
+if [ ! -d $BACKUP_DIR ]; then
+  mkdir -p $BACKUP_DIR
 fi
 
 # .bashrc
 # remove .bashrc
 if [ -f ${NVIM_SETTING} ]; then
-    mv ${NVIM_SETTING} ${BACKUP_DIR}/nvim
+  mv ${NVIM_SETTING} ${BACKUP_DIR}/nvim
+  rm ${NVIM_SETTING}
 fi
 
 # add symbolic link
-ln -s ${PWD}/nvim ~/.config/nvim
+ln -s ${script_dir}/nvim ~/.config/nvim
