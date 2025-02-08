@@ -1,4 +1,7 @@
 return {
 	"neovim/nvim-lspconfig",
-	opt = require("plugins.lsp-settings.index"),
+	opts = {
+		inlay_hints = { enable = true },
+	},
+	config = function() end,
 }
