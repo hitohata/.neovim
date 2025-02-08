@@ -6,8 +6,12 @@ NVIM_SETTING=$HOME/.config/nvim
 
 BACKUP_DIR="${HOME}/.DotenvBackups"
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias readlink=greadlink
+fi
+
 # get this file dir
-script_path=$(readlink -f "$0")
+script_path=$(readlink -f $0)
 script_dir=$(dirname "$script_path")
 
 if [ ! -d $BACKUP_DIR ]; then
@@ -22,4 +26,5 @@ if [ -f ${NVIM_SETTING} ]; then
 fi
 
 # add symbolic link
+rm ~/.config/nvim
 ln -s ${script_dir}/nvim ~/.config/nvim
