@@ -8,3 +8,5 @@ vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
 vim.g.lazyvim_python_lsp = "pyright"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
+
+vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
