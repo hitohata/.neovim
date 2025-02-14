@@ -11,6 +11,7 @@ return {
 			"biome",
 			"mypy",
 			"ruff",
+			"typos-lsp",
 		},
 	},
 	ui = {
