@@ -36,6 +36,7 @@ return {
 				"rust",
 				"ninja",
 				"rst",
+				"nix",
 			},
 			incremenatal_selection = {
 				enable = true,
