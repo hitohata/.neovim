@@ -12,6 +12,9 @@ return {
 			"mypy",
 			"ruff",
 			"typos-lsp",
+			"swiftlint",
+			"nixfmt",
+			"nixpkgs-fmt",
 		},
 	},
 	ui = {

@@ -37,6 +37,7 @@ return {
 				"ninja",
 				"rst",
 				"nix",
+				"swift",
 			},
 			incremenatal_selection = {
 				enable = true,
