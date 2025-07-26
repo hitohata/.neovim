@@ -1,6 +1,8 @@
 return {
 	"Saecki/crates.nvim",
 	event = { "BufRead Cargo.toml" },
+	ft = { "rust", "toml" },
+	lazy = false,
 	opts = {
 		completion = {
 			crates = {

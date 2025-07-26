@@ -4,6 +4,7 @@ return {
 		ensure_installed = {
 			"bash-language-server",
 			"rust-analyzer",
+			"codelldb",
 			"typescript-language-server",
 			"js-debug-adapter",
 			"lua-language-server",
